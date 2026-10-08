@@ -1,0 +1,543 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(../img/fondo_web_restaurante_1920x1080.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+p {font-family: sans-serif, Arial, Helvetica, sans-serif;}
+/* _------------Header------------------ */
+
+
+.header_inicio {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 15px 5%;
+    z-index: 10000;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 2.5px 15px #10101025;
+    transition : transform 0.4s ease;
+}
+
+.header_inicio.header-oculto {
+    transform: translateY(-100%);
+}
+
+.header_logo img{
+    width: 90px;
+    height: auto;
+    display: block;
+}
+
+.header_navegador ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header_navegador a {
+    color: inherit;
+    position: relative;
+    display: inline-block;
+    transition: transform 0.8s ease;
+}
+
+.header_navegador a:hover {
+    transform: scale(1.08);
+}
+
+.header_navegador a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--dorado-logo);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+.header_navegador a:hover::after {
+    transform: scaleX(1);
+}
+
+.header_iconos {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.header_iconos img{
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease;
+}
+
+.header_iconos img:hover {
+    transform: scale(1.15);
+}
+.header_navegador {
+    color: var(--verde-logo);
+    transition: color 0.3s ease;
+}
+
+
+.header_navegador.header-oscuro  {
+    color: #efefef
+}
+
+
+/* ----------------hero-------------------- */
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero_sec1 h1{
+    font-family: "Bread Serif", serif;
+    font-size: 78px;
+    color: #efefef;
+}
+.hero_sec1 p {
+    color: #efefef;
+    line-height: 1.8;
+}
+
+
+.presentacion,
+.experiencia,
+.reservas,
+.contactos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    min-height: 100vh;
+}
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero_sec2 {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.hero_sec2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.4) 25%,
+        rgba(0, 0, 0, 0.2) 50%,
+        rgba(0, 0, 0, 0) 75%
+    );
+    z-index: 1;
+}
+
+
+.hero_sec2 img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.hero_sec1 {
+    position: relative;
+    z-index: 2;
+}
+
+.hero_sec1,
+.presentacion_sec1,
+.presentacion_sec2 {
+    width: 40%;
+    height: 400px;
+}
+
+.hero_sec1,
+.presentacion_sec1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero_sec1 .seccion_button .button_secundario {
+    color: #efefef;
+}
+
+.presentacion_sec2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 5px 5px 15px #10101088;
+}
+
+/* -------------------------------------------- */
+
+.especialidades{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    min-height: 100vh;
+
+}
+.especialidades_sec1_text {
+    text-align: center;
+}
+
+.especialidades_sec2_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+.img_especialidades_platos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.especialidades_sec2_img_izq,
+.especialidades_sec2_img_centro,
+.especialidades_sec2_img_derecha {
+    width: 30%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center ;
+    box-shadow:8px 8px 30px #10101038;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.experiencia {
+    margin: 10%;
+}
+
+.experiencia_text{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.experiencia_img img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 5px 5px 15px #10101088;
+
+}
+
+.reservas{
+    flex-direction: column;
+    margin: 0 60px;
+} 
+
+.contener_reservas {
+    display: flex;
+    gap: 30px;
+}
+
+.contener_reserva {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+.contener_reserva_text{
+    flex: 1;
+    text-align: center;
+}
+.contener_reserva_img {
+    flex: 1;
+}
+.contener_reserva_img img,
+.contactos_ubicacion img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+
+}
+
+.contactos_ubicacion {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.contactos_ubicacion img {
+    border: 2px solid var(--verde-logo);
+}
+.contactos_ubicacion figcaption{
+    font-weight: bold;
+    padding: 10px;
+}
+
+.contactos_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contactos_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+
+.contactos_links_icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.seccion_button_carta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contactos_text .seccion_button .button_secundario {
+    padding: 8px 10px;
+}
+
+.contactos_links_icon img,
+.contactos_links_iconos img {
+    width: 25px;
+    height: auto;
+    transition: tranform 0.3s ease;
+    
+}
+.contactos_links_iconos img:hover {
+    transform: scale(1.15);
+}
+
+
+.contactos_links_iconos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer_inicio {
+    background-color: #101010;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5%;
+    color: #bdbaba;
+}
+
+.footer_documentacion {
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+}
+
+.footer_inicio p{
+    letter-spacing: 2px;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.footer_inicio img{
+    width: 130px;
+    height: auto;
+}
+
+/* animacion presentacion */
+
+.seccion-animada .presentacion_sec1,
+.seccion-animada .presentacion_sec2 {
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.seccion-animada .presentacion_sec1 {
+    transform: translateX(-80px);
+}
+
+.seccion-animada .presentacion_sec2 {
+    transform: translateX(80px);
+}
+
+.seccion-animada.visible .presentacion_sec1,
+.seccion-animada.visible .presentacion_sec2 {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* animacion experiencia */
+
+/* ---------- ANIMACIÓN EXPERIENCIA ---------- */
+
+.experiencia_img,
+.experiencia_text {
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.experiencia_img {
+    transform: translateX(-80px);
+}
+
+.experiencia_text {
+    transform: translateX(80px);
+}
+
+.experiencia.visible .experiencia_img,
+.experiencia.visible .experiencia_text {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ---------- ANIMACIÓN RESERVAS ---------- */
+
+.contener_reserva {
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.contener_reserva:first-child {
+    transform: translateX(-80px);
+}
+
+.contener_reserva:last-child {
+    transform: translateX(80px);
+}
+
+.reservas.visible .contener_reserva {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ---------- ANIMACIÓN CONTACTOS ---------- */
+
+.contactos_ubicacion,
+.contactos_text,
+.contactos_links {
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.contactos_ubicacion {
+    transform: translateX(-80px);
+}
+
+.contactos_text {
+    transform: translateY(80px);
+}
+
+.contactos_links {
+    transform: translateX(80px);
+}
+
+.contactos.visible .contactos_ubicacion,
+.contactos.visible .contactos_text,
+.contactos.visible .contactos_links {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* ---------- ANIMACIÓN ESPECIALIDADES ---------- */
+
+.especialidades_sec1_text,
+.especialidades_sec2_img,
+.seccion_button_carta {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.especialidades.visible .especialidades_sec1_text,
+.especialidades.visible .especialidades_sec2_img,
+.especialidades.visible .seccion_button_carta {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---------- CARRUSEL ESPECIALIDADES ---------- */
+
+/* ---------- CARRUSEL ESPECIALIDADES ---------- */
+
+.especialidades_carrusel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.carrusel_ventana {
+    width: 900px;
+    max-width: calc(100vw - 160px);
+    overflow: hidden;
+}
+
+.carrusel_pista {
+    display: flex;
+    gap: 30px;
+    transition: transform 0.5s ease;
+}
+
+.tarjeta {
+    flex: 0 0 280px;
+    height: 500px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 8px 8px 30px #10101038;
+}
+
+.carrusel_anterior,
+.carrusel_siguiente {
+    flex: 0 0 45px;
+    border: none;
+    background-color: var(--verde-logo);
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 25px;
+    transition: transform 0.3s ease;
+}
+
+.carrusel_anterior:hover,
+.carrusel_siguiente:hover {
+    transform: scale(1.1);
+}

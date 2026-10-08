@@ -1,0 +1,278 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background-image: url(../img/fondo_web_restaurante_1920x1080.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header{    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 15px 5%;
+    z-index: 10000;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 2.5px 15px #10101025;
+    transition : transform 0.4s ease;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(70, 67, 67);
+}
+
+/* --------------header----------- */
+
+.header_inicio.header-oculto {
+    transform: translateY(-100%);
+}
+
+
+/* ---------------------------- */
+
+
+
+.icono {
+    width: 25px;
+    height: 25px;
+}
+
+.logo {
+    width: 50px;
+    justify-content: center;
+}
+
+
+.header_logo p{
+    font-weight: bolder;
+}
+
+.header_iconos {
+display: flex;
+gap: 15px;
+}
+/* -------------HERO--------------------- */
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+
+.hero_texto {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%, -50%);
+    color: white;
+    text-align: left;
+    width: 50%;
+    
+}
+.hero_texto h1 {
+    font-size: 65px;
+}
+.etiqueta {
+    color: rgb(81, 81, 81);
+}
+
+
+/* ---------------BRASIL------------------- */
+.brasil {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.brasil_texto {
+    width: 40%;
+    float: left;
+}
+.brasil_img {
+    width: 40%;
+    float: left;
+}
+
+/* -----------------RESTAURANTE------------------------ */
+.restaurante {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.restaurante_img {
+    width: 40%;
+    float: left;
+}
+
+.restaurante_texto {
+    width: 40%;
+    float: left;
+}
+
+/* ------------------PRINCIPIOS----------------------- */
+.principios {
+    width: 100%;
+    height: 70vh;
+}
+
+.principios_titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.principios_contenedores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.principios_contenedores-tarjeta {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.principios_contenedores-tarjeta img{
+    width: 80px;
+    height: 80px;
+}
+
+/* --------------------AMBIENTE-------------------------- */
+
+.ambiente {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.ambiente_texto {
+    width: 40%;
+    float: left;
+}
+
+.ambiente_img {
+    width: 40%;
+    float: left;
+}
+
+/* ---------------------CONOCER----------------------- */
+
+.conocer{
+    width: 100%;
+    height: 60vh;
+    text-align: center;
+
+}
+
+/* ---------------------FOOTER--------------------- */
+
+.f_contenido {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.linea{
+    border: 1px solid rgb(149, 147, 147);
+}
+.f_copy {
+    text-align: center;
+    font-size: 14px;
+    color: rgb(193, 192, 192);
+    font-style: italic;
+}
+
+.footer_documentacion{
+    display: flex;
+    gap: 15px;
+    color: white;
+}
+
+.footer_iconos {
+    display: flex;
+    gap: 15px;
+}
+
+
+
+/* --------------------------------------------------------- */
+/*                    ANIMACIONES                             */
+/* --------------------------------------------------------- */
+
+
+/* -------------DESLISE LATERAL-------------------------- */
+
+.seccion-animada .brasil_texto,
+.seccion-animada .brasil_img,
+.seccion-animada .restaurante_img,
+.seccion-animada .restaurante_texto,
+.seccion-animada .ambiente_texto,
+.seccion-animada .ambiente_img {
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.seccion-animada .brasil_texto,
+.seccion-animada .restaurante_img,
+.seccion-animada .ambiente_texto {
+    transform: translateX(-80px);
+}
+
+.seccion-animada .brasil_img,
+.seccion-animada .restaurante_texto,
+.seccion-animada .ambiente_img {
+    transform: translateX(80px);
+}
+
+.seccion-animada.visible .brasil_texto,
+.seccion-animada.visible .brasil_img,
+.seccion-animada.visible .restaurante_img,
+.seccion-animada.visible .restaurante_texto,
+.seccion-animada.visible .ambiente_texto,
+.seccion-animada.visible .ambiente_img {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ---------DESLIDE DE BAJO---------- */
