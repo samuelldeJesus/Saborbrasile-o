@@ -1,0 +1,606 @@
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* =====================================================
+       GENERAL
+       ===================================================== */
+
+    body {
+        overflow-x: hidden;
+    }
+
+    main {
+        width: 100%;
+    }
+
+
+    /* =====================================================
+       HEADER
+       ===================================================== */
+
+    .header_inicio {
+        padding: 12px 20px;
+    }
+
+    .header_logo img {
+        width: 75px;
+    }
+
+    .header_navegador ul {
+        gap: 15px;
+    }
+
+    .header_navegador a {
+        font-size: 14px;
+    }
+
+    .header_iconos {
+        gap: 10px;
+    }
+
+    .header_iconos img {
+        width: 21px;
+        height: 21px;
+    }
+
+
+    /* =====================================================
+       HERO
+       ===================================================== */
+
+    .hero {
+        width: 100%;
+        min-height: 100vh;
+        padding: 100px 25px 60px;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+
+        box-sizing: border-box;
+    }
+
+    .hero_sec1 {
+        width: 100%;
+        max-width: 600px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero_sec1_titulo_principal h1 {
+        font-size: 45px;
+    }
+
+    .hero_sec1_text {
+        width: 100%;
+        max-width: 550px;
+    }
+
+    .hero_sec1_text p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .seccion_button {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .button_principal,
+    .button_secundario {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .hero_sec2 {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+
+        margin-top: 40px;
+    }
+
+    .hero_sec2 img {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+    }
+
+
+    /* =====================================================
+       PRESENTACIÓN / QUIÉNES SOMOS
+       ===================================================== */
+
+    .presentacion {
+        width: 100%;
+        padding: 60px 20px;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        box-sizing: border-box;
+    }
+
+    .presentacion_sec1,
+    .presentacion_sec2 {
+        width: 100%;
+        max-width: 600px;
+        box-sizing: border-box;
+    }
+
+    .presentacion_sec1 {
+        text-align: center;
+    }
+
+    .presentacion_sec2 {
+        margin-top: 30px;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .presentacion_sec2 img {
+        display: block;
+
+        width: 100%;
+        max-width: 500px;
+
+        height: auto;
+    }
+
+
+    /* =====================================================
+       ESPECIALIDADES / CARRUSEL
+       ===================================================== */
+
+    .especialidades {
+        width: 100%;
+        padding: 60px 15px;
+
+        box-sizing: border-box;
+    }
+
+    .especialidades_carrusel {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 10px;
+    }
+
+    .carrusel_ventana {
+        width: 280px;
+        max-width: calc(100vw - 100px);
+
+        overflow: hidden;
+    }
+
+    .carrusel_pista {
+        display: flex;
+        gap: 30px;
+    }
+
+    .tarjeta {
+        flex: 0 0 280px;
+
+        width: 280px;
+        height: 500px;
+
+        box-sizing: border-box;
+    }
+
+    .carrusel_anterior,
+    .carrusel_siguiente {
+        flex-shrink: 0;
+
+        width: 40px;
+        height: 40px;
+
+        font-size: 20px;
+    }
+
+
+    /* =====================================================
+       EXPERIENCIA
+       ===================================================== */
+
+    .experiencia {
+        width: 100%;
+        max-width: 100%;
+
+        padding: 60px 20px;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        box-sizing: border-box;
+    }
+
+    /*
+       Imagen arriba
+       Texto abajo
+    */
+
+    .experiencia_img {
+        order: 1;
+
+        width: 100%;
+        max-width: 600px;
+
+        display: flex;
+        justify-content: center;
+
+        box-sizing: border-box;
+    }
+
+    .experiencia_img img {
+        display: block;
+
+        width: 100%;
+        max-width: 550px;
+
+        height: auto;
+
+        object-fit: cover;
+    }
+
+    .experiencia_text {
+        order: 2;
+
+        width: 100%;
+        max-width: 600px;
+
+        margin-top: 35px;
+
+        text-align: center;
+
+        box-sizing: border-box;
+    }
+
+    .experiencia_text_subtitulo {
+        width: 100%;
+    }
+
+    .experiencia_text_parrafo {
+        width: 100%;
+    }
+
+    .experiencia_text_button {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+
+        margin-top: 25px;
+    }
+
+
+    /* =====================================================
+       RESERVAS
+       ===================================================== */
+
+    .reservas {
+        width: 100%;
+        max-width: 100%;
+
+        padding: 60px 20px;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        box-sizing: border-box;
+    }
+
+
+    /* TÍTULO Y TEXTO */
+
+    .reservas_text {
+        width: 100%;
+        max-width: 600px;
+
+        text-align: center;
+
+        box-sizing: border-box;
+
+        margin-bottom: 35px;
+    }
+
+
+    /* CONTENEDOR DE LAS DOS RESERVAS */
+
+    .contener_reservas {
+        width: 100%;
+        max-width: 600px;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 30px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* RESERVA NORMAL */
+
+    .contener_reserva_normal {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        box-sizing: border-box;
+    }
+
+    .contener_reserva_normal_text {
+        width: 100%;
+
+        text-align: center;
+
+        box-sizing: border-box;
+    }
+
+    .contener_reserva_normal_contener {
+        width: 100%;
+
+        margin-top: 25px;
+
+        display: flex;
+        justify-content: center;
+
+        box-sizing: border-box;
+    }
+
+    .contener_reserva_normal_contener img {
+        display: block;
+
+        width: 100%;
+        max-width: 500px;
+
+        height: auto;
+    }
+
+
+    /* RESERVA PARA EVENTOS */
+
+    .contener_reserva_eventos {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       CONTACTO
+       ===================================================== */
+
+    .contactos {
+        width: 100%;
+        max-width: 100%;
+
+        padding: 60px 20px;
+
+        box-sizing: border-box;
+    }
+
+    .contactos_contenido {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 25px;
+    }
+
+    .contacto_box {
+        width: 100%;
+        max-width: 500px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       FOOTER
+       ===================================================== */
+
+    footer {
+        padding: 40px 20px;
+
+        text-align: center;
+    }
+
+}
+
+
+/* =========================================================
+   MÓVILES PEQUEÑOS
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    /* HEADER */
+
+    .header_inicio {
+        padding: 10px 15px;
+    }
+
+    .header_logo img {
+        width: 65px;
+    }
+
+    .header_navegador ul {
+        gap: 10px;
+    }
+
+    .header_navegador a {
+        font-size: 12px;
+    }
+
+    .header_iconos {
+        gap: 7px;
+    }
+
+    .header_iconos img {
+        width: 18px;
+        height: 18px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 90px 15px 50px;
+    }
+
+    .hero_sec1_titulo_principal h1 {
+        font-size: 36px;
+    }
+
+    .hero_sec1_text p {
+        font-size: 15px;
+    }
+
+    .seccion_button {
+        flex-direction: column;
+
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .button_principal,
+    .button_secundario {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        text-align: center;
+    }
+
+
+    /* PRESENTACIÓN */
+
+    .presentacion {
+        padding: 50px 15px;
+    }
+
+
+    /* ESPECIALIDADES */
+
+    .especialidades {
+        padding: 50px 10px;
+    }
+
+    .carrusel_ventana {
+        width: 250px;
+        max-width: calc(100vw - 90px);
+    }
+
+    .tarjeta {
+        flex: 0 0 250px;
+
+        width: 250px;
+    }
+
+    .carrusel_anterior,
+    .carrusel_siguiente {
+        width: 35px;
+        height: 35px;
+
+        font-size: 18px;
+    }
+
+
+    /* EXPERIENCIA */
+
+    .experiencia {
+        padding: 50px 15px;
+    }
+
+    .experiencia_img {
+        width: 100%;
+    }
+
+    .experiencia_img img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .experiencia_text {
+        width: 100%;
+
+        margin-top: 25px;
+    }
+
+
+    /* RESERVAS */
+
+    .reservas {
+        padding: 50px 15px;
+    }
+
+    .reservas_text {
+        width: 100%;
+    }
+
+    .contener_reservas {
+        width: 100%;
+
+        gap: 25px;
+    }
+
+    .contener_reserva_normal,
+    .contener_reserva_eventos {
+        width: 100%;
+    }
+
+
+    /* CONTACTO */
+
+    .contactos {
+        padding: 50px 15px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 50px 15px;
+    }
+
+}
